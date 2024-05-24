@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=div , initial-scale=1.0">
+  <title>Document</title>
+  <!--<link rel="stylesheet" href="{{url_for('static', filename='estilo.css')}}" -->
+  <link rel="stylesheet" href="../static/estilo.css">
+</head>
+
+<body>
+
+
+  <div class="j1">
+    <div class="j2">
+      <img src="{{url_for('static', filename='iconeAmamos.png')}}" alt="">
+    </div>
+    <div class="j3">
+      <div class="rec01"></div>
+      <div class="rec02"></div>
+    </div>
+    <ul class="nav">
+      <li><a href="/index">Home</a></li>
+      <li><a href="/inst">A Instituição</a></li>
+      <li><a href="/ajuda">Como Ajudar</a></li>
+      <li><a href="/contato">Contato</a></li>
+      <li><a href="/bazar">Bazar</a></li>
+      <li><a href="/parceiro">Parceiros</a></li>
+    </ul>
+  </div>
+
+  {% block conteudo %}
+  {% endblock %}
+
+  <div class="j3">
+    <div class="rec03"></div>
+    <div class="rec04"></div>
+    <div style="margin-bottom: 50px;"></div>
+  </div>
+</body>
+
+</html>
